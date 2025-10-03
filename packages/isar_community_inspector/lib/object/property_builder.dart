@@ -62,9 +62,8 @@ class _PropertyBuilderState extends State<PropertyBuilder> {
                     style: GoogleFonts.jetBrainsMono(
                       fontWeight: FontWeight.w500,
                       color: theme.colorScheme.onPrimaryContainer,
-                      decoration: widget.underline
-                          ? TextDecoration.underline
-                          : null,
+                      decoration:
+                          widget.underline ? TextDecoration.underline : null,
                     ),
                   ),
                 ),
@@ -75,8 +74,8 @@ class _PropertyBuilderState extends State<PropertyBuilder> {
                   Text(
                     widget.type,
                     style: TextStyle(
-                      color: theme.colorScheme.onPrimaryContainer.withValues(
-                        alpha: 0.5,
+                      color: theme.colorScheme.onPrimaryContainer.withOpacity(
+                        0.5,
                       ),
                     ),
                   ),
